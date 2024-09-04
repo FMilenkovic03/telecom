@@ -23,6 +23,7 @@ struct Consumer consumers[100];
 int consumerCount = 0;
 
 void addConsumer(){
+    if(consumers < 100){
     struct Consumer newConsumer; 
 
     printf("Ajoutez le nom du client : ");
@@ -36,5 +37,8 @@ void addConsumer(){
 
     newConsumer.totalBill = newConsumer.usage * 0.15;
 
-    consumers[consumerCount++] = newConsumer;    
+    consumers[consumerCount++] = newConsumer;
+    }else{
+        printf("capacité maximale atteinte !");
+    }    
 }
