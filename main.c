@@ -42,3 +42,10 @@ void addConsumer(){
         printf("capacité maximale atteinte !");
     }    
 }
+
+void viewConsumers(){
+    int i;
+    for(i=0;i<100;i++){
+        printf("Voici la liste des consommateurs : %d", consumers[]);
+    }
+}
