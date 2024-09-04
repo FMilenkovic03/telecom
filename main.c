@@ -45,6 +45,11 @@ void addConsumer(){
 
 void viewConsumers(){
     for(int i=0;i<100;i++){
-        printf("%s", consumers[i].name);
+        printf("Consommateur %d:\n", i + 1);
+        printf("Nom : %s\n", consumers[i].name);
+        printf("Numéro de téléphone : %s\n", consumers[i].phoneNumber);
+        printf("Utilisation d'énergie : %.2f kWh\n", consumers[i].usage);
+        printf("Facture totale : %.2f €\n", consumers[i].totalBill);
+        printf("----------------------------\n");
     }
 }
