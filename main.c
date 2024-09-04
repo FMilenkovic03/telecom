@@ -36,6 +36,5 @@ void addConsumer(){
 
     newConsumer.totalBill = newConsumer.usage * 0.15;
 
-    
-    
+    consumers[consumerCount++] = newConsumer;    
 }
