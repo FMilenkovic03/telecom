@@ -23,11 +23,11 @@ struct Consumer consumers[100];
 int consumerCount = 0;
 
 void addConsumer(){
-    if(consumers < 100){
+    if(consumerCount < 100){
     struct Consumer newConsumer; 
 
     printf("Ajoutez le nom du client : ");
-    anf(" %[^\n]", newConsumer.name);
+    scanf(" %[^\n]", newConsumer.name);
 
     printf("Entrez le numéro de téléphone: ");
     scanf(" %s", newConsumer.phoneNumber);
