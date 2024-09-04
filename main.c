@@ -44,9 +44,9 @@ void addConsumer(){
 }
 
 void viewConsumers(){
-    
+    int consumers;
     int i;
     for(i=0;i<100;i++){
-        printf("Voici la liste des consommateurs : %d", consumers[i]);
+        printf("Voici la liste des consommateurs : %d", consumers[]);
     }
 }
