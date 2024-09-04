@@ -326,7 +326,7 @@ void searchConsumer()
         printf("Informations sur le consommateur %d:\n", foundIndex + 1);
         printf("Nom : %s\n", consumers[foundIndex].name);
         printf("Numéro de téléphone : %s\n", consumers[foundIndex].phoneNumber);
-        printf("Utilisation : %.2f kWh\n", consumers[foundIndex].usage);
+        printf("Utilisation : %.2f Go\n", consumers[foundIndex].usage);
         printf("Facture totale : %.2f €\n", consumers[foundIndex].totalBill);
     }
     else
